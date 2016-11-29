@@ -45,7 +45,8 @@
                     <ul class="nav navbar-nav">
                         <li><a href="<?php echo $baseurl ?>admin/?/promos">Promotions</a></li>
                         <li><a href="<?php echo $baseurl ?>admin/?/fichiers">Fichiers</a></li>
-                        <li><a href="<?php echo $baseurl ?>admin/?/personaldata">Données personnelles</a></li>  
+                        <!-- Attention a ne pas oublier d'enlever la partie sur les données personnelles -->
+                        <li><a href="<?php echo $baseurl ?>admin/?/personaldata">Données personnelles</a></li>
                     </ul>
                 </div>
             </div>
