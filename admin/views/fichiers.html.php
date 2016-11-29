@@ -40,6 +40,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                <!-- Voilà la partie qui bug ligne 43 , cela bloque l'affichage du gestionnaire de fichiers -->
                      <?php
 
                         while($file = $files->fetch()) {
