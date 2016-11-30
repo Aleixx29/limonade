@@ -11,12 +11,10 @@ require_once('limonade-master/lib/limonade.php');
 #   GET          |  /promos          |  promos
 #   GET          |  /fichiers        |  fichiers 
 #   GET          |  /fichiers/:promo |  fichierspromo 
-#   GET          |  /personaldata    |  personaldata
-#   POST         |  /promos          |  promos_add 
+#   POST         |  /promos          |  promos_add
 #   POST         |  /fichiers        |  fichiers_add
 #   PUT          |  /promos          |  promos_edit
 #   PUT          |  /fichiers        |  fichiers_edit
-#   PUT          |  /personaldata    |  personaldata_edit
 # ---------------+-------------------+-------------------------------------------
 
 # 3. Dispatchs GET
@@ -25,7 +23,6 @@ dispatch('/', 'accueil');
 dispatch('/promos', 'promos');
 dispatch('/fichiers', 'fichiers');
 dispatch('/fichiers/:promo', 'fichierspromo');
-dispatch('/personaldata', 'personaldata');
 
 # 3. Dispatchs POST
 
@@ -36,7 +33,6 @@ dispatch_post('/fichiers', 'fichiers_add');
 
 dispatch_put('/promos', 'promos_edit');
 dispatch_put('/fichiers', 'fichiers_edit');
-dispatch_put('/personaldata', 'personaldata_edit');
 
 function before($route) {
     $baseurl = 'http://127.0.0.1/rentree/';

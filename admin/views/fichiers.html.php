@@ -42,7 +42,6 @@
                 <tbody>
                 <!-- Voilà la partie qui bug ligne 43 , cela bloque l'affichage du gestionnaire de fichiers -->
                      <?php
-
                         while($file = $files->fetch()) {
                             echo '<tr><td class="libelle">
                                 <a href="'.$url.'pdf/'.$file['fichier'].'" data-url="'.$file['fichier'].'" target="_blank" data-toggle="tooltip" data-placement="right" title="Ouvrir le fichier">'.$file['libelle'].'</a></td><td class="promos-fichier"></td>

@@ -38,7 +38,7 @@
                     </button>
         
                     <a class="navbar-logo" href="#"><img style="display: none;"src="views/images/isen-logo.png" alt="logo-isen" /></a>
-                    <a class="navbar-brand" href="#">Documents de rentrée ISEN</a>
+                    <a class="navbar-brand" href="#">Rentrée ISEN</a>
                 </div> 
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
