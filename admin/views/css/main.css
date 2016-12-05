@@ -223,7 +223,7 @@ li {
     border: none;
     transition: all 0.4s;
     color: #ffffff;
-    background-color: #2196f3;
+    background-color: #e74c3c;
     display: block;
     margin-bottom: 0;
     font-weight: 400;
@@ -441,7 +441,7 @@ input[type="search"] {
 }
 
 .alert-primary {
-    background-color: #2196f3;
+    background-color: #e74c3c;
 }
 
 .success-a {

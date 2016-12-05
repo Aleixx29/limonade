@@ -236,7 +236,7 @@ table.dataTable, table.dataTable th, table.dataTable td {
     padding: 6px 16px;
     line-height: 1.846;
     text-decoration: none;
-    color: #2196f3;
+    color: #e74c3c;
     background-color: #ffffff;
     border: 1px solid #dddddd;
     margin-left: -1px;
@@ -258,8 +258,8 @@ table.dataTable, table.dataTable th, table.dataTable td {
 
 .dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
     color: #ffffff !important;
-    background-color: #2196f3;
-    border-color: #2196f3;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
     cursor: default;
     
 }
