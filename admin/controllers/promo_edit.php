@@ -6,8 +6,8 @@ function promos_edit() {
     require_once('utils/readFichierPromotions.php');
     require_once('utils/writeFichierPromotions.php');
         
-    $toastState = 'toast-warning';
-    $toastMessage = "La promotion n'a pas été modifiée";
+    //$toastState = 'toast-warning';
+    //$toastMessage = "La promotion n'a pas été modifiée";
     
     $url = $urlrentree.'config.php';
     $libellePromo = readFichierPromotions($url);
@@ -46,14 +46,14 @@ function promos_edit() {
             ksort($libellePromo); // Trie les éléments de la première à la dernière année
             
             writeFichierPromotions($url, $libellePromo);
-            $toastState = 'toast-success';
-            $toastMessage = "La promotion à été modifiée";
+            //$toastState = 'toast-success';
+            //$toastMessage = "La promotion à été modifiée";
         }
     }
     
     set('libellePromo', $libellePromo);
-    set('toast',  $toastMessage);
-    set('toastStyle', $toastState);
+    //set('toast',  $toastMessage);
+    //set('toastStyle', $toastState);
     
     return render('promos.html.php' ,'layout/default_layout.php'); # rendering HTML view
 

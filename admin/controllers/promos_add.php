@@ -6,8 +6,8 @@ function promos_add() {
     require_once('utils/readFichierPromotions.php');
     require_once('utils/writeFichierPromotions.php');
     
-    $toastState = 'toast-warning';
-    $toastMessage = "La promotion n'a pas été ajoutée";
+    //$toastState = 'toast-warning';
+    //$toastMessage = "La promotion n'a pas été ajoutée";
     
     $url = $urlrentree.'config.php';
     $libellePromo = readFichierPromotions($url);
@@ -30,16 +30,16 @@ function promos_add() {
             ksort($libellePromo); // Trie les éléments de la première à la dernière année
 
             writeFichierPromotions($url, $libellePromo);
-            $toastState = 'toast-success';
-            $toastMessage = "La promotion <b>".$_POST['libelle']."</b> a été ajoutée";
+            //$toastState = 'toast-success';
+            //$toastMessage = "La promotion <b>".$_POST['libelle']."</b> a été ajoutée";
         } else {
-            $toastMessage = "La promotion n'a pas été ajoutée.  <b>Le libellé doit contenir A suivi d'un chiffre</b>";
+            //$toastMessage = "La promotion n'a pas été ajoutée.  <b>Le libellé doit contenir A suivi d'un chiffre</b>";
         }
     }
     
     set('libellePromo', $libellePromo);
-    set('toast',  $toastMessage);
-    set('toastStyle', $toastState);
+    //set('toast',  $toastMessage);
+    //set('toastStyle', $toastState);
     
     return render('promos.html.php' ,'layout/default_layout.php'); # rendering HTML view
 

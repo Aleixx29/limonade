@@ -4,8 +4,8 @@
         require_once('config-admin.php');
         require_once('utils/readFichierPromotions.php');
                     
-        $toastState = 'toast-warning';
-        $toastMessage = "Les informations du fichier n'ont pas été modifiées";
+        //$toastState = 'toast-warning';
+        //$toastMessage = "Les informations du fichier n'ont pas été modifiées";
         
         if(!empty($_POST["nom"]) && !empty($_POST["libelle"]) && !empty($_POST["promos"])) {
             
@@ -97,8 +97,8 @@
                 }
             }
             
-            $toastState = 'toast-success';
-            $toastMessage = "Les informations du fichier <b>".$_POST['libelle']."</b> ont été modifiées";
+            //$toastState = 'toast-success';
+            //$toastMessage = "Les informations du fichier <b>".$_POST['libelle']."</b> ont été modifiées";
 
         }
            
@@ -109,8 +109,8 @@
         set('url', $urlrentree);
 		set('files', $files);
         set('libellePromo', $libellePromo);
-        set('toast',  $toastMessage);
-        set('toastStyle', $toastState);
+        //set('toast',  $toastMessage);
+        //set('toastStyle', $toastState);
         
         return render('fichiers.html.php' ,'layout/default_layout.php'); # rendering HTML view
     }

@@ -63,10 +63,10 @@
                  </form>
              </div>
          </div>
-            <div class="alert alert-primary alert-dismissible alert-success">
+            <!--<div class="alert alert-primary alert-dismissible alert-success">
                 <button type="button" class="close" data-dismiss="alert">✕</button>
                 Le libellé d'une promotion doit contenir <strong>la lettre A suivie d'un chiffre entre 1 et 5</strong> selon l'année correspondante
-            </div>
+            </div>-->
      </div>
 </div>
 <?php

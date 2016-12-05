@@ -71,7 +71,7 @@
                         ?>
                     </ul>
                 </div>
-                <div class="col-lg-12">
+                <!--<div class="col-lg-12">
                     <div class="alert alert-primary alert-dismissible alert-success">
                         <button type="button" class="close" data-dismiss="alert">✕</button>
                     <?php
@@ -84,7 +84,7 @@
                         }
                         
                     ?>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>

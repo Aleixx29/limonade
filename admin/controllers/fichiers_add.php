@@ -6,8 +6,8 @@ function fichiers_add() {
         
     
     $url = $urlrentree.'config.php';
-    $toastState = 'toast-warning';
-    $toastMessage = "Le fichier n'a pas été ajouté";
+    //$toastState = 'toast-warning';
+    //$toastMessage = "Le fichier n'a pas été ajouté";
     
     if(!empty($_FILES['fichier']) && !empty($_POST['libelle']) && !empty($_POST['promos'])) {
         if($_FILES['fichier']['type'] == "application/pdf") {
@@ -64,10 +64,10 @@ function fichiers_add() {
                }
             }
 
-            $toastState = 'toast-success';
-            $toastMessage = "Le fichier <b>".$_POST['libelle']."</b> a été importé et lié aux promotions sélectionnées";
+            //$toastState = 'toast-success';
+            //$toastMessage = "Le fichier <b>".$_POST['libelle']."</b> a été importé et lié aux promotions sélectionnées";
         } else {
-            $toastMessage = "Seuls les fichiers au format PDF sont autorisés";
+            //$toastMessage = "Seuls les fichiers au format PDF sont autorisés";
         }
     }
     
@@ -77,8 +77,8 @@ function fichiers_add() {
     set('url', $urlrentree);
     set('files', $files);
     set('libellePromo', $libellePromo);
-    set('toast',  $toastMessage);
-    set('toastStyle', $toastState);
+    //set('toast',  $toastMessage);
+    //set('toastStyle', $toastState);
     
     return render('fichiers.html.php' ,'layout/default_layout.php'); # rendering HTML view
 }
